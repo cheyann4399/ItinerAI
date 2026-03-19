@@ -137,30 +137,7 @@ celery -A celery_app worker -l info -P solo -Q itinerary,default
 
 ---
 
-## 多智能体流程（简述）
-
-```mermaid
-flowchart LR
-  DemandForm[DemandForm(Frontend)] --> SubmitDemand[submit-demand(API)]
-  SubmitDemand --> DemandAnalyst[DemandAnalystAgent]
-  DemandAnalyst --> SpotRecommend[get-spots(API)]
-  SpotRecommend --> SpotSelect[SpotCardSelector(Frontend)]
-  SpotSelect --> ConfirmSpots[confirm-spots(API)]
-  ConfirmSpots --> GenerateItinerary[generate-itinerary(API)]
-  GenerateItinerary --> Planner[ItineraryPlannerAgent]
-  Planner --> ItineraryGraph[ItineraryGraph(Frontend)]
-  ChatPanel[ChatPanel(一句话修改)] --> ModifyAndRegen[modifyItineraryAndRegenerate(API)]
-  ModifyAndRegen --> Planner
-```
-
-
-## Roadmap（下一步）
-
-- [ ] 接入真实地图/天气/景点数据源（并实现失败兜底）
-- [ ] 行程导出 PDF/Excel（前端读取本地记忆或后端返回结构化数据）
-- [ ] 行程编辑：拖拽景点、修改时长、自定义点位
-- [ ] 记忆持久化：从 session 级升级到用户级存储（跨会话）
-- [ ] 更完善的“标准化修改指令”解析与提示
+“标准化修改指令”解析与提示
 
 ---
 
