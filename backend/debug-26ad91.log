@@ -1,0 +1,1 @@
+{"sessionId": "26ad91", "runId": "initial", "hypothesisId": "config-load", "location": "app/core/config.py:get_settings", "message": "Loaded settings", "data": {"app_env": "local", "app_name": "ItinerAI"}, "timestamp": 1773586881917}

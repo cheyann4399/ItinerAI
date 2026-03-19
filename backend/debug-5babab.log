@@ -1,0 +1,1 @@
+{"sessionId": "5babab", "runId": "pre-fix", "hypothesisId": "H1", "location": "app/agents/demand_analyst.py:build_demand_analyst_agent", "message": "build_demand_analyst_agent model info", "data": {"model_class": "ChatOpenAI", "model_module": "langchain_community.chat_models.openai", "has_bind_tools": true}, "timestamp": 1773669329246}

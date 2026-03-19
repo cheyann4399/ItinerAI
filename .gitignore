@@ -1,0 +1,26 @@
+# Node / 前端
+node_modules
+dist
+build
+.turbo
+.next
+
+# 环境与配置
+.env
+.env.*
+
+# 日志与临时文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器与系统文件
+.DS_Store
+Thumbs.db
+*.swp
+.vscode
+
+.idea/
+.cursor/
+*.iml

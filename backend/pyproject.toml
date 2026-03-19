@@ -1,0 +1,14 @@
+[project]
+name = "itinerai-backend"
+version = "0.1.0"
+description = "Backend service for ItinerAI travel planning assistant (FastAPI)"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+
